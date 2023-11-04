@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <link rel="shotcut icon" href="/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.tonycrane.cc/utils/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&family=Righteou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Slides</title>
+</head>
+
+<body class="text-center">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.tonycrane.cc/utils/bootstrap.bundle.min.js"></script>
+    <div class="container d-flex flex-column h-100 p-3">
+        <header class="mb-auto"></header>
+        <main role="main" class="inner" style="margin-bottom: 2em;">
+
+            <div class="logo-group">
+                <img class="logo" src="tonycrane.png" alt="logo" />
+                <div class="logo-text">
+                    <p class="logo-text-up">
+                        a
+                    </p>
+                    <p class="logo-text-down">
+                        selfknow
+                    </p>
+                </div>
+            </div>
+            <div style="font-size: 1.5em; margin-bottom: 2em;">公开在线幻灯片</div>
+
+
+            <div class="slides">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">PythonLecture</h5>
+                        <h6 class="card-subtitle mb-2 text-muted heti-skip">B 站直播 / Python 基础语法</h6>
+                        <a href="/slide/" class="card-link"><i class="fas fa-sign-in-alt"></i> 进入</a>
+                        <a href="https://github.com/TonyCrane/PythonLecture" class="card-link"><i class="fab fa-github"></i> 源码</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+        <footer class="mt-auto">
+            <div class="inner">
+                <p>
+                    Copyright &copy; 2022-2023
+                    <a href="https://github.com/" class="fake-link">
+                        <strong>@</strong>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <div>
+        <a id="colormode" href="javascript:;">
+            <i class="fas fa-sun"></i>
+        </a>
+    </div>
+    <script src="darkmode.js"></script>
+    <script>
+        $(function() {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+    <script src="/heti.js"></script>
+    <script>
+        const heti = new Heti(".slides")
+        heti.autoSpacing()
+    </script>
+</body>
+
+</html>
